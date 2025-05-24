@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <audio autoplay loop>
+    <source src="aa.mp3" type="audio/mpeg">
+  </audio>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const audio = document.querySelector("audio");
+      const userInteraction = () => {
+        audio.play();
+        document.removeEventListener("click", userInteraction);
+      };
+      document.addEventListener("click", userInteraction);
+    });
+    </script>
+  <hr></hr>
+<div class="body">
+ <div class="birthdayCard">
+<div class="cardFront"><h3 class="happy">GOOD NIGHT</h3>
+<div class="balloons">
+  <div class="balloonOne"></div>
+  <div class="balloonTwo"></div>
+  <div class="balloonThree"></div>
+  <div class="balloonFour"></div>
+</div>
+</div>
+<div class="cardInside">
+    <h3 class="back">GOOD NIGHT</h3>
+    <p contenteditable="true">haii sayang</p> 
+    <p contenteditable="true"> selamat boboo
+      sayanggg akuuuu yanggg cantikkk seduniaaa yang lucuuu seduniaaa yang comelll yang lebihhh dariii semuanyaaa 
+      sayangg loveee youuuu moreee sayanggg akuuuu mwahhh, eh
+    </p>
+    <p contenteditable="true" class="name"></p>
+  </div>
+</div>
+</div>
+  <script src="main.js"></script>
+</body>
+</html>
